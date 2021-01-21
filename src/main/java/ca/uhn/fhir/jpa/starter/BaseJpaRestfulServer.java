@@ -152,7 +152,7 @@ public class BaseJpaRestfulServer extends RestfulServer {
         JpaConformanceProviderR4 confProvider = new JpaConformanceProviderR4(this, fhirSystemDao,
           daoConfig, searchParamRegistry);
         confProvider.setImplementationDescription("HAPI FHIR R4 Server");
-        setServerConformanceProvider(confProvider);
+        //setServerConformanceProvider(confProvider);
       } else if (fhirVersion == FhirVersionEnum.R5) {
 
         JpaConformanceProviderR5 confProvider = new JpaConformanceProviderR5(this, fhirSystemDao,
